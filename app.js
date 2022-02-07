@@ -1,9 +1,16 @@
 for ( let i = 1; i <= 100; i++ ) {
     
-    const num = document.querySelector('#list');
+    if ( i % 5 === 0 && i % 3 === 0 ) {
 
-    if ( i % 3 === 0 ) {
+        const li = document.createElement('li');
+        li.append (`fizzbuzz`);
 
+        li.classList.add('box-red');
+        
+        list.append(li);
+        
+    } else if ( i % 3 === 0 ) {
+    
         const li = document.createElement('li');
         li.append (`fizz`);
 
@@ -12,20 +19,11 @@ for ( let i = 1; i <= 100; i++ ) {
         list.append(li);
         
     } else if ( i % 5 === 0 ) {
-    
+
         const li = document.createElement('li');
         li.append (`buzz`);
 
         li.classList.add('box-yellow');
-        
-        list.append(li);
-        
-    } else if ( i % 5 === 0 && i % 3 === 0 ) {
-
-        const li = document.createElement('li');
-        li.append (`fizzbuzz`);
-
-        li.classList.add('box-red');
         
         list.append(li);
         
